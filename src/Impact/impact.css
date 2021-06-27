@@ -1,0 +1,27 @@
+/* This is css of impact headline card (used inside function ImpactCard) */
+.impact-card {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    background: #afa0a0;
+    border-radius: 8px;
+    margin: 3px 15px 3px 0px;
+}
+
+/* This is css of impact headline container (used inside function ImpactCardContainer) */
+.impact-card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* This is css of impact headline wrapper (used inside function ImpactWrapper) */
+.impact-wrapper {
+    box-sizing: border-box;
+    padding: 3% 10% 3% 10%;  
+    background-color: #F5F5F5;
+    /* max-height: 880px; */
+    height: auto;
+}

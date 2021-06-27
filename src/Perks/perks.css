@@ -1,0 +1,38 @@
+/* This is css of perk card (used inside function PerkCard) */
+.perk-card {
+    display: flex;
+    width: 40%;
+}
+
+/* This is css of image that is present in perk card  (used inside function PerkCard) */
+.perk-card-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* This is css pf text that is present in perk card (used inside function PerkCard) */
+.perk-card-information {
+    margin-top: 10%;
+    font-family: Open Sauce One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* This is css of container that contains perk cards (used inside function PerkCardContainer)  */
+.perk-card-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+/* This is css of whole wrapper (used inside function PerkWrapper)  */
+.perk-wrapper {
+    box-sizing: border-box;
+    padding: 10%;
+}

@@ -1,0 +1,51 @@
+/* This is css for Job Opening Card (used inside function JobOpeningCard) */
+.job-opening-card {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px 8px 0px 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+/* This is css of text written inside Job Opening Card (used inside function JobOpeningCard) */
+.job-opening-card-details {
+    margin: 2% 2% 2% 2%;
+    font-size: 22px;
+}
+
+/* This is css of container of Job portion in Open Position section (used inside function JobOpeningCardContainer) */
+.job-opening-card-container {
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: #F5F5F5; /*   Have to change in future    */
+}
+
+/* This is css of heading Job portion in Open Position section (used inside function JobOpeningCardContainer) */
+.open-position-heading {
+    font-family: Open Sauce One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 35px;
+}
+
+/* This is css of subheading Job portion in Open Position section (used inside function JobOpeningCardContainer) */
+.open-position-sub-heading{
+    font-family: Open Sauce One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* This is css of main function  */
+.open-position-wrapper {
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    padding: 10%;
+}

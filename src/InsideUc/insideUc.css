@@ -1,0 +1,45 @@
+/* This is css of UC  Card (inside function GetCards) */
+.card-container {
+    padding: 0px;
+    width: 368px;
+    min-height: 350px;
+    height: auto;
+    border: 2px solid black;
+  }
+
+  /* This is css of image that is present inside of Card (inside function GetCards)  */
+  .card-image {
+    margin: 0px;
+    width: 368px;
+    height: 240px;
+  }
+  /* This is css of details section below card's image in the UC Card (inside function GetCards) */
+  .card-details {
+    margin: 20px;
+  }
+
+/* This is css of card container i.e for a single row. (inside function PopulateCards) */
+.inside-uc-card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}  
+
+/* This is css of whole uc inside component (inside function InsideUcWrapper) */
+.inside-uc-wrapper {
+  box-sizing: border-box;
+  padding: 10%;
+
+}
+
+
+/* This is CSS for The main heading of this component i.e (Inside UC) */
+.inside-uc-heading {
+  font-family: Open Sauce One;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 60px;
+}

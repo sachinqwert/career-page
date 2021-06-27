@@ -1,0 +1,24 @@
+/* This is css of department card */
+.department-card {
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/*  This is css of container section for department cards */
+.department-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* This is css of heading of department cards  */
+.department-card-heading {
+    font-family: Open Sauce One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    margin: 35px 0 35px 20px;
+}

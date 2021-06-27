@@ -1,0 +1,63 @@
+.footer-wrapper-class{
+    width: 100vw;
+    padding: 5% 5% 1% 5%;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+/* css of footer title (used in function FooterTitle) */
+.footer-title {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* css of logo image in footer title (used in function FooterTitle) */
+.logo-image{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+
+/* css of footer link section (used in function FooterLinkSection)  */
+.footer-link-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* css of list inside  footer link section (used in function FooterLinkSection) */
+.footer-link-section-list {
+    padding: 5% 2% 0% 2%;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* css of ul inside list (used in function FooterLinkSection) */
+.footer-link-section-list ul {
+    list-style-type: none;
+}
+/* css of footer information section */
+.footer-information {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/* css of footer imformation list */
+.footer-information-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* css of line */
+hr {
+    /* border: 2px sol */
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color: black;
+    height: 1px;
+  }

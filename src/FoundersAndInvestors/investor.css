@@ -1,0 +1,19 @@
+/* this is css of investor card */
+.investor-card {
+    width: 270px;
+    height: 270px;
+    background: #F5F5F5;
+    border-radius: 8px;    
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+/* this is css of investor card container */
+.investor-card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
