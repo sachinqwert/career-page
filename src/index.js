@@ -49,7 +49,10 @@ import './Header/index.js';
 import './Header/style.css';
 import { HeaderTitle } from './Header/index.js';
 
-// header check
+// Apply for the jobs
+import './ApplyForJob';
+import './ApplyForJob/style.css'
+import { ApplyForJobWrapper, SubmitYourApplicationForJob } from './ApplyForJob';
 
 
 //Fake Objects
@@ -264,6 +267,16 @@ function JobPortalPage (props) {
   )
 }
 
+function ApplyForTheJobPage (props) {
+  return (
+    <>
+      <HeaderTitle/>
+      <ApplyForJobWrapper/>
+      <FooterWrapper/>
+    </>
+  );
+}
+
 
 
 ReactDOM.render(
@@ -271,7 +284,7 @@ ReactDOM.render(
     <Router>
       <Route exact path="/" component={MainPage} />
       <Route path="/jobPortal" component={JobPortalPage} />
-      
+      <Route path="/applyJob" component={ApplyForTheJobPage} />
     </Router>
   </>
   ,
