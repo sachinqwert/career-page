@@ -1,0 +1,13 @@
+.header-title-container {
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header-title-container h1 {
+    font-family: Open Sauce One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+

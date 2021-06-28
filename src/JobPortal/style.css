@@ -1,0 +1,24 @@
+.job-portal-page-card {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    margin: auto;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 0px;
+}
+.card-column {
+    margin: auto;
+    padding: 8px;
+    font-size: 20px;
+    line-height: 16px;
+}
+.job-portal-card-container {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.input-field-container {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}

@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+
+
+import './Navbar/index.js';
 
 import {Heading,GetCards,PopulateCards,InsideUcWrapper} from './InsideUc/index.js'
 import './InsideUc/insideUc.css';
@@ -32,6 +40,16 @@ import { JobOpeningCard, JobOpeningCardContainer, OpenPositionWrapper } from './
 import './OpenPositions/department.css';
 
 
+import './JobPortal/index';
+import './JobPortal/style.css';
+import { GetButton, JobPortalPageCard, JobPortalPageCardContainer,GetJobPortalWrapper } from './JobPortal/index';
+import { GetHeaderBar, GetNavbar } from './Navbar/index.js';
+
+import './Header/index.js';
+import './Header/style.css';
+import { HeaderTitle } from './Header/index.js';
+
+// header check
 
 
 //Fake Objects
@@ -220,21 +238,41 @@ const founderInvestor = {
 
 
 
+function MainPage (props) {
+  return (
+      <>
+        <GetHeaderBar/>
+        <InsideUcWrapper name = {InsideUcObjects} />   
+        <OpenPositionWrapper/>
+        <PerkWrapper name={Perks} />
+        <CultureWrapper name={Culture} />
+        <ImpactWrapper name={Impact} />
+        <FounderAndInvestorWrapper/>
+        <FooterWrapper/>
+        
+      </>
+  );
+}
 
-
-
+function JobPortalPage (props) {
+  return (
+    <>
+    <HeaderTitle/>
+      <GetJobPortalWrapper/>
+      <FooterWrapper/>
+    </>
+  )
+}
 
 
 
 ReactDOM.render(
   <>  
-    <InsideUcWrapper name = {InsideUcObjects} />
-    <OpenPositionWrapper/>
-    <PerkWrapper name={Perks} />
-    <CultureWrapper name={Culture} />
-    <ImpactWrapper name={Impact} />
-    <FounderAndInvestorWrapper/>
-    <FooterWrapper/>
+    <Router>
+      <Route exact path="/" component={MainPage} />
+      <Route path="/jobPortal" component={JobPortalPage} />
+      
+    </Router>
   </>
   ,
   document.getElementById('root')
