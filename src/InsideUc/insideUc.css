@@ -1,7 +1,7 @@
 /* This is css of UC  Card (inside function GetCards) */
 .card-container {
     padding: 0px;
-    width: 368px;
+    width: 368px; /*this is initially 368 pixels*/
     min-height: 350px;
     height: auto;
     border: 2px solid black;

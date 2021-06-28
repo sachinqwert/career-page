@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../assets/functions';
 import { separateObjects } from '../assets/functions';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 
 export const Heading = "Inside UC";

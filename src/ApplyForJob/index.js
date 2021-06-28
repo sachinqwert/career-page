@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
+// This function returns a single list of job requirements. there can be multiple lists
 export function JobRequirementList (props) {
     return (
         <div className="job-requirement-list">
@@ -46,6 +48,8 @@ export function JobRequirementList (props) {
     );
 }
 
+// This is container on right side of list. This contains apply job button and additional imformation 
+// if present any.
 export function SubmitYourApplicationForJob (props) {
     return (
         <>
@@ -65,6 +69,7 @@ export function SubmitYourApplicationForJob (props) {
     );
 }
 
+// This is wrapper function that contains and combines all components of this page.
 export function ApplyForJobWrapper (props) {
     return (
         <div className="container apply-for-job-wrapper">

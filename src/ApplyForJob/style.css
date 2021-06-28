@@ -1,17 +1,30 @@
-.job-requirement-other-details {
-    background: #F5F5F5;
-    border-radius: 8px;
+/* This css is for job requirement list. (used inside function JobRequirementList) */
+.job-requirement-list {
+    color: black;
 }
+
+/* This is css that contains apply for this button. and other details below it */
+/* used inside function SubmitYourApplicationForJob */
 .submit-your-application-for-job {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.submit-your-application-for-job button {
-    margin-bottom: 40px;
-}
+
+/* This is used for content that is present below apply button */
+/* used inside function SubmitYourApplicationForJob */ 
 .job-requirement-other-details {
+    background: #F5F5F5;
+    border-radius: 8px;
     padding: 15px;
 }
+
+/* This is css of  apply button */
+/* used inside function SubmitYourApplicationForJob */
+.submit-your-application-for-job button {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+/* This is css of main wrapper function */
 .apply-for-job-wrapper {
     margin-top: 60px;
     margin-bottom: 60px;
