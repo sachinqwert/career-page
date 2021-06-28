@@ -13,7 +13,11 @@ export const Heading = "Inside UC";
 
 // This function actually makes the card
 export function GetCards(props) {
+    // get the item all the item is stored in the varieble props.name
     const item = props.name;
+
+    // this is used to change background image. it's only use. see the line  
+    //  <div className="card-image" style={CardBackgroundImage}>
     const CardBackgroundImage = {
         backgroundImage: `url(${item.imgUrl})`,
         backgroundRepeat: "no-repeat",
@@ -21,33 +25,46 @@ export function GetCards(props) {
         backgroundPosition: "center"
     };
 
-
+    // returning the card
     return (
-        <div className="card-container">
-            <div className="card-image" style={CardBackgroundImage}>
+        
+        // outer enclosure for bootstarp
+        <div className="col-sm-12 col-md-6 col-lg-4">
+                    {/* inside this is actually the card */}
+                    <div className="card-container ">
 
-            </div>
-            <div className="card-details">
-                <h2>{props.name.heading}</h2>
-                <p>{props.name.subHeading}</p>
-                <a href={item.urlLink} target="_blank"> 
-                    <button>{props.name.urlDescription}</button>
-                </a>
-            </div>
+                        <div className="card-image" style={CardBackgroundImage}>
+                            {/* This is the image */}
+                        </div>
+
+                        {/* This contains details below image inside card */}
+                        <div className="card-details">
+                            <h2>{props.name.heading}</h2>
+                            <p>{props.name.subHeading}</p>
+                            <a href={item.urlLink} target="_blank"> 
+                                <button className="inside-uc-card-button">{props.name.urlDescription}</button>
+                            </a>
+                        </div>
+
+                    </div>
         </div>
     )
 }
 
 // This function returns a row of cards. we are iterating our cards.
 export function PopulateCards(props) {
-    const arr = props.name;
+    const arr = props.item;
+    const itemName = props.name;
     return (
-        <div className="inside-uc-card-container">
-            {
-                arr.map((item) => 
-                    <GetCards name={item} />
-                )
-            }
+        <div className="inside-uc-card-container ">
+            <h2>{itemName}</h2>
+            <div className="row">
+                {
+                    arr.map((item) => 
+                        <GetCards name={item} />
+                    )
+                }
+            </div>
         </div>
     );
 }
@@ -56,16 +73,14 @@ export function PopulateCards(props) {
 export function InsideUcWrapper (props) {
     const obj = separateObjects(props.name);
     return (
-        <div className="inside-uc-wrapper">
-            <h1 className="inside-uc-heading">Inside UC</h1>
-            <h1>{obj.Engineering[0].category}</h1>    
-            <PopulateCards name={obj.Engineering}/>    
 
-            <h1>{obj.Design[0].category}</h1>    
-            <PopulateCards name={obj.Design}/>     
+        <div className="container inside-uc-wrapper ">
+            
+                <h1 className="inside-uc-heading">Inside UC</h1>
+                <PopulateCards item={obj.Engineering} name="Engineering" />  
+                <PopulateCards item={obj.Design} name="Design"/>
+                <PopulateCards item={obj.Culture} name="Culture"/>
 
-            <h1>{obj.Culture[0].category}</h1>    
-            <PopulateCards name={obj.Design}/>        
         </div>
     )
 }

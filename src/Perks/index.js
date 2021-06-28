@@ -4,7 +4,9 @@ import ReactDOM from 'react-dom';
 
 // This is function to create Perk Card
 export function PerkCard (props) {
+    // This is incoming perk item
     const perkItem = props.perkItem;
+    // This is used to render background image
     const PerkImage = {
         backgroundImage: `url(${perkItem.imgUrl})`,
         backgroundPosition: "center",
@@ -12,13 +14,14 @@ export function PerkCard (props) {
         backgroundRepeat: "no-repeat"
         };
 
-
+    // returning the element
     return (
-        <div className="perk-card">
-            <div className="perk-card-image" style={PerkImage} >
-
+        <div className="perk-card col-sm-12 col-md-12 col-lg-6 row">
+            <div className="perk-card-image col-2" style={PerkImage} >
+                {/* This is the image of perk-card */}
             </div>
-            <div className="perk-card-information">
+            <div className="perk-card-information col-9">
+                {/* This list down the perk */}
                 {perkItem.perkDetail}
             </div>
         </div>        
@@ -30,18 +33,23 @@ export function PerkCardContainer (props) {
     const PerkObject = props.name;
     return (
         <>
-            <div>
-                <h1>Perks</h1>
-                <p>
-                    {PerkObject.perkDescription}
-                </p>
-            </div>
-            <div className="perk-card-container">
-                {
-                    PerkObject.perksList.map((item) => 
-                        <PerkCard perkItem={item} />
-                    )
-                }
+            <div className="container">
+                {/* This is perk heading */}
+                <div className="row">  
+                        <h1>Perks</h1>
+                        <p>
+                            {PerkObject.perkDescription}
+                        </p>
+                </div>
+
+                {/* This lists down all the perks */}
+                <div className="perk-card-container row">
+                    {
+                        PerkObject.perksList.map((item) => 
+                            <PerkCard perkItem={item} />
+                        )
+                    }
+                </div>
             </div>
         </>
     );

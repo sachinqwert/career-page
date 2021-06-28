@@ -1,7 +1,7 @@
 /* This is css of perk card (used inside function PerkCard) */
 .perk-card {
-    display: flex;
-    width: 40%;
+    /* display: flex; */
+    /* width: 40%; */
 }
 
 /* This is css of image that is present in perk card  (used inside function PerkCard) */
@@ -9,7 +9,9 @@
     width: 150px;
     height: 150px;
     margin-right: 10px;
+    border-radius: 50%;
 }
+
 
 /* This is css pf text that is present in perk card (used inside function PerkCard) */
 .perk-card-information {
@@ -25,14 +27,16 @@
 .perk-card-container{
     width: 100%;
     height: auto;
-    display: flex;
+    margin: auto;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
   
 }
 
 /* This is css of whole wrapper (used inside function PerkWrapper)  */
 .perk-wrapper {
     box-sizing: border-box;
-    padding: 10%;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
